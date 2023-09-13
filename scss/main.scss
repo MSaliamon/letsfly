@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Lora:wght@700&family=Quicksand:wght@400;500;700&family=Roboto+Slab:wght@700&display=swap');
+@import './mixins';
+@import './reset';
+@import './vars';
+  @font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?2hypyb');
+    src:  url('../fonts/icomoon.eot?2hypyb#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?2hypyb') format('truetype'),
+      url('../fonts/icomoon.woff?2hypyb') format('woff'),
+      url('../fonts/icomoon.svg?2hypyb#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  .icon-facebook:before {
+    content: "\e900";
+  }
+  .icon-twitter:before {
+    content: "\e901";
+  }
+  .icon-vk:before {
+    content: "\e902";
+  }
+  .icon-youtube:before {
+    content: "\e903";
+  }
+[class^=icon-], [class*= "icon-"] {
+  font-family: icomoon !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+.header {
+  @include flex(space-around, center, 0);
+  background: $dark85;
+  padding: 36px 0;
+  position: sticky;
+  top: 0;
+  &__logo {
+    color: $white;
+  }
+  .nav {
+    &__item {
+      &-link {
+        color: $white;
+      }
+    }
+  }
+
+  .social {
+    &__item {
+      &-link {
+        color: $white;
+        font-size: 24px;
+      }
+    }
+  }
+}
+.logo {
+  @include Roboto(32px, 700, 32px);
+}
+.nav {
+  @include flex(center, center, 56px);
+  &__item {
+    &-link {
+      @include Lato(22px, 500, 22px)
+    }
+  }
+}
+.langBar {
+  @include flex(center, center, 4px);
+}
+.social {
+  @include flex(center, center, 32px);
+  &__item {
+    &-link {
+      font-size: 24px;
+    }
+  }
+}
+
+
+.bg-photo {
+  background: url('../img/bg-section1.png') no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  width: 100%;
+  min-height: 964px;
+  margin-top: -119px;
+  @include flex(center, center, 0);
+  flex-direction: column;
+
+  &__airplane {
+    margin-top: 72px;
+  }
+}
+.btn {
+  background-color: $green;
+  color: $white;
+  text-transform: uppercase;
+  @include Lato(16px, 900, 16px);
+}
+.call-to-action {
+  @include flex(center, center, 32px);
+  flex-direction: column;
+  background-color: $dark85;
+  padding: 40px;
+
+  h1 {
+    @include Lora(84px, 700, 100px);
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  span {
+    @include Lato(24px, 400, 24px);
+    color: $white;
+  }
+  .btn {
+    padding: 21px 110px;
+  }
+}
+.section2 {
+  @include flex(center, center, 32px);
+  flex-direction: column;
+  background-color: $white;
+  margin-top: 144px;
+  &__title {
+    color: $grey;
+  }
+}
+.title {
+  @include Roboto(56px, 700, 24px);
+  text-transform: uppercase;
+}
+
+.section2__text {
+  
+}
+
+.footer {
+  @include flex(space-around, center, 0);
+  background: url(../img/imgMountains\ 1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 96px 0;
+  &__logo {
+    color: $dark;
+  }
+  .nav {
+    &__item {
+      &-link {
+        color: $dark;
+      }
+    }
+  }
+
+  .social {
+    &__item {
+      &-link {
+        color: $dark;
+      }
+    }
+  }
+}
