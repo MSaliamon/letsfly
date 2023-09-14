@@ -207,12 +207,14 @@
   width: 20%;
   height: 3px;
   text-align: center;
+  margin-bottom: 24px;
 }
 .section3__discount {
   @include Quicksand(28px, 500, 32px);
   color: $white;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
 
