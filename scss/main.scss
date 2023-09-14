@@ -180,44 +180,50 @@
   .btn {
     padding: 19px 50px;
   }
-  .section3__title {
+  &__title {
     margin-bottom: 16px;
     color: $white;
   }
-}
-.section3__text {
-  @include Roboto(144px, 700, 144px);
-  color: $white;
-  text-transform: uppercase
-}
-.section3__date {
-  @include Quicksand(24px, 500, 18px);
-  text-transform: uppercase;
-  color: $white;
-}
-.section3__sub-text {
-  margin-top: 16px;
-  @include Quicksand(24px, 400, 32px);
-  text-align: center;
-  color: $white;
-  width: 70%;
-}
-.section3__solid {
-  background: $white;
-  width: 20%;
-  height: 3px;
-  text-align: center;
-  margin-bottom: 24px;
-}
-.section3__discount {
-  @include Quicksand(28px, 500, 32px);
-  color: $white;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 8px;
+  &__text {
+    @include Roboto(144px, 700, 144px);
+    color: $white;
+    text-transform: uppercase
+  }
+  &__date {
+    @include Quicksand(24px, 500, 18px);
+    text-transform: uppercase;
+    color: $white;
+  }
+  &__sub-text {
+    margin-top: 16px;
+    @include Quicksand(24px, 400, 32px);
+    text-align: center;
+    color: $white;
+    width: 70%;
+  }
+  &__solid {
+    background: $white;
+    width: 20%;
+    height: 3px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  &__discount {
+    @include Quicksand(28px, 500, 32px);
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
 }
 
-
+.section4 {
+  @include flex(center, center, 50px);
+  margin-top: 124px;
+}
+.container {
+  
+}
 .footer {
   @include flex(space-around, center, 0);
   background: url(../img/imgMountains\ 1.png);

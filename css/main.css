@@ -405,11 +405,10 @@ legend {
 .section3 .btn {
   padding: 19px 50px;
 }
-.section3 .section3__title {
+.section3__title {
   margin-bottom: 16px;
   color: #fff;
 }
-
 .section3__text {
   font-family: "Roboto Slab", serif;
   font-size: 144px;
@@ -418,7 +417,6 @@ legend {
   color: #fff;
   text-transform: uppercase;
 }
-
 .section3__date {
   font-family: "Quicksand", sans-serif;
   font-size: 24px;
@@ -427,7 +425,6 @@ legend {
   text-transform: uppercase;
   color: #fff;
 }
-
 .section3__sub-text {
   margin-top: 16px;
   font-family: "Quicksand", sans-serif;
@@ -438,7 +435,6 @@ legend {
   color: #fff;
   width: 70%;
 }
-
 .section3__solid {
   background: #fff;
   width: 20%;
@@ -446,7 +442,6 @@ legend {
   text-align: center;
   margin-bottom: 24px;
 }
-
 .section3__discount {
   font-family: "Quicksand", sans-serif;
   font-size: 28px;
@@ -456,6 +451,20 @@ legend {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 8px;
+}
+
+.section4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  margin-top: 124px;
 }
 
 .footer {
