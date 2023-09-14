@@ -139,8 +139,82 @@
 }
 
 .section2__text {
-  
+  @include Quicksand(20px, 500, 32px);
+  text-align: center;
+  width: 70%;
 }
+.section2-container {
+  @include flex(center, center, 80px);
+}
+
+.section2-container__box {
+  @include flex(center, center, 20px);
+  flex-direction: column;
+}
+
+
+.section2-container__box-number {
+  margin-top: 64px;
+  @include Roboto(144px, 700, 24px);
+  color: $green;
+}
+
+.section2-container__box-img {
+  margin-top: -30px;
+}
+
+.section2-container__box-text {
+  @include Quicksand(40px, 400, 32px);
+  text-align: center;
+  width: 150%;
+}
+
+.section3 {
+  @include flex(center, center, 16px);
+  flex-direction: column;
+  margin-top: 124px;
+  background: url('../img/bg-section3.png') no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 56px 0px 106px 0px;
+  .btn {
+    padding: 19px 50px;
+  }
+  .section3__title {
+    margin-bottom: 16px;
+    color: $white;
+  }
+}
+.section3__text {
+  @include Roboto(144px, 700, 144px);
+  color: $white;
+  text-transform: uppercase
+}
+.section3__date {
+  @include Quicksand(24px, 500, 18px);
+  text-transform: uppercase;
+  color: $white;
+}
+.section3__sub-text {
+  margin-top: 16px;
+  @include Quicksand(24px, 400, 32px);
+  text-align: center;
+  color: $white;
+  width: 70%;
+}
+.section3__solid {
+  background: $white;
+  width: 20%;
+  height: 3px;
+  text-align: center;
+}
+.section3__discount {
+  @include Quicksand(28px, 500, 32px);
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 
 .footer {
   @include flex(space-around, center, 0);
