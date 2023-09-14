@@ -218,12 +218,98 @@
 }
 
 .section4 {
-  @include flex(center, center, 50px);
+  @include flex(center, center, 0px);
   margin-top: 124px;
+  flex-direction: column;
+  .btn {
+    padding: 19px 62px;
+  }
+
 }
 .container {
-  
+  @include flex(center, center, 30px);
+  margin-top: 70px;
+  margin-bottom: 50px;
 }
+
+.container__box1 {
+  background: url('../img/prague-img.png') no-repeat;
+  background-size: cover;
+  padding: 10px 221px 304px 0px;
+}
+.container__box2 {
+  background: url('../img/portugal-img.png') no-repeat;
+  background-size: cover;
+  padding: 10px 221px 304px 0px;
+}
+.container__box3 {
+  background: url('../img/dubai-img.png') no-repeat;
+  background-size: cover;
+  padding: 10px 221px 304px 0px;
+}
+.container__textbox {
+  padding: 5px 8px;
+  background-color: $dark85;
+}
+.container__textbox-text {
+  @include Roboto(18px, 400, 18px);
+  color: $white;
+}
+.section4__text {
+  @include Quicksand(14px, 500, 18px);
+  text-align: center;
+  margin: 8px;
+}
+
+
+
+.section5 {
+  @include flex(center, center, 0px);
+  flex-direction: column;
+  margin-top: 75px;
+  background: url('../img/fish.png') no-repeat;
+  background-size: cover;
+  background-color: $green40;
+  .text {
+    @include Lato(14px, 500, 18px);
+  }
+  .big--gap {
+    gap: 112px;;
+  }
+}
+.section5__title {
+  margin-top: 50px;
+  color: $white;
+}
+.box1 {
+  background: url('../img/restorant.png') no-repeat;
+  background-size: cover;
+  padding: 10px 301px 259px 7px;
+}
+.box2 {
+  background: url('../img/bike.png') no-repeat;
+  background-size: cover;
+  padding: 12px 337px 305px 8px;
+}
+.box3 {
+  background: url('../img/neon.png') no-repeat;
+  background-size: cover;
+  padding: 10px 301px 259px 7px;
+}
+.container__play {
+  position: relative;
+  top: 130px;
+  left: 203px;
+}
+.play {
+  top: 130px;
+  left: 237px;
+}
+.play2 {
+  top: 130px;
+  left: 220px;
+}
+
 .footer {
   @include flex(space-around, center, 0);
   background: url(../img/imgMountains\ 1.png);
