@@ -512,12 +512,17 @@ legend {
   background-color: rgba(0, 0, 0, 0.85);
 }
 
+.textbox {
+  width: 120%;
+}
+
 .container__textbox-text {
   font-family: "Roboto Slab", serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
   color: #fff;
+  width: 150%;
 }
 
 .section4__text {
@@ -556,7 +561,7 @@ legend {
   line-height: 18px;
 }
 .section5 .big--gap {
-  gap: 112px;
+  gap: 70px;
 }
 
 .section5__title {
