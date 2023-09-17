@@ -378,7 +378,7 @@ legend {
   font-weight: 400;
   line-height: 32px;
   text-align: center;
-  width: 150%;
+  width: 100%;
 }
 
 .section3 {
@@ -561,7 +561,7 @@ legend {
   line-height: 18px;
 }
 .section5 .big--gap {
-  gap: 70px;
+  gap: 40px;
 }
 
 .section5__title {
