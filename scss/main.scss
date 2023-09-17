@@ -166,7 +166,7 @@
 .section2-container__box-text {
   @include Quicksand(40px, 400, 32px);
   text-align: center;
-  width: 150%;
+  width: 100%;
 }
 
 .section3 {
@@ -278,7 +278,7 @@
     @include Lato(14px, 500, 18px);
   }
   .big--gap {
-    gap: 70px;
+    gap: 40px;
   }
 }
 .section5__title {
